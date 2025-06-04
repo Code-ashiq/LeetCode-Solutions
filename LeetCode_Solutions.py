@@ -78,3 +78,26 @@ class Solution:
 
 sol = Solution()
 print(sol.twoSum([1,3,5,4],5))
+
+
+#problem 1768.Merge Strings Alternatively Level : Easy
+
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        result = []
+        i,j = 0,0
+        
+        while i < len(word1) or j < len(word2):
+
+            if i < len(word1):
+                result.append(word1[i])
+                i += 1
+
+            if j < len(word2):
+                result.append(word2[j])
+                j += 1
+
+        return "".join(result)
+
+sol = Solution()
+print(sol.mergeAlternately("ah","siq"))
