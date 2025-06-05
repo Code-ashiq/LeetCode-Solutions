@@ -80,7 +80,7 @@ sol = Solution()
 print(sol.twoSum([1,3,5,4],5))
 
 
-#problem 1768.Merge Strings Alternatively Level : Easy
+#problem 1768.Merge Strings Alternatively, Level : Easy
 
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
@@ -105,3 +105,23 @@ class Solution:
 
 sol = Solution()
 print(sol.mergeAlternately("ah","siq"))
+
+#problem 392.Is Subsequence, Level : Easy 
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        S = len(s)
+        T = len(t)
+        if S == '': return True
+        if S > T: return False
+
+        j = 0
+        for i in range(T):
+            if t[i] == s[j]:
+                if j == S-1:
+                    return True
+                j += 1
+
+        return False
+sol = Solution()
+print(sol.isSubsequence("ace", "abcde"))
