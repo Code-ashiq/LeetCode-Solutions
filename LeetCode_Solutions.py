@@ -112,7 +112,7 @@ class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         S = len(s)
         T = len(t)
-        if S == '': return True
+        if s == '': return True
         if S > T: return False
 
         j = 0
