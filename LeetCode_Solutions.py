@@ -34,7 +34,7 @@ sol = Solution()
 print(sol.romanToInt("XXV"))
 
 
-#problem 2239.Find Closest NUmber to Zero, Level : Easy
+#problem 2239.Find Closest Number to Zero, Level : Easy
 
 class Solution:
     def findClosestNumber(self, nums: list[int]) -> int:
