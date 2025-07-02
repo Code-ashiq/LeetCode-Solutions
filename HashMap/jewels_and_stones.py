@@ -1,3 +1,5 @@
+# Problem 771. Jewels and Stones, Level: Easy
+
 #BRUTE FORCE METHOD
 
 class Solution:
