@@ -1,3 +1,5 @@
+# Problem 682. Baseball Game, Level: Easy
+
 class Solution:
     def calPoints(self, operations: list[str]) -> int:
         stk = [] # Stack to keep track of valid scores
